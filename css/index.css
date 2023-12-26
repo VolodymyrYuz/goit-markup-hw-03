@@ -1,3 +1,5 @@
+/*-----------------GLOBAL-----------------------*/
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -16,6 +18,19 @@ ul {
 
 .link {
   text-decoration: none;
+}
+
+/*----------------------------------------*/
+
+/*-----------------HEADER-----------------------*/
+
+.header {
+  display: flex;
+  width: 1440px;
+  height: 72px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .header-navigation-logo {
@@ -73,6 +88,10 @@ ul {
   color: var(--OCEAN, #404bbf);
 }
 
+/*----------------------------------------*/
+
+/*-----------------HERO-----------------------*/
+
 .hero {
   background: var(--NAVY-BLUE, #2e2f42);
 }
@@ -83,6 +102,7 @@ ul {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  width: 496px;
 }
 
 .hero-button-os {
@@ -101,6 +121,9 @@ ul {
   background-color: #404bbf;
 }
 
+/*----------------------------------------*/
+
+/*-----------------VALUES-----------------------*/
 .values-item-title {
   color: var(--NAVY-BLUE, #2e2f42);
   font-size: 20px;
@@ -115,6 +138,10 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+/*----------------------------------------*/
+
+/*-----------------TEAM-----------------------*/
 
 .team {
   background: var(--CLOUD, #f4f4fd);
@@ -145,6 +172,10 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+/*----------------------------------------*/
+
+/*-----------------PORTFOLIO-----------------------*/
 
 .portfolio-title {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -178,6 +209,10 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+/*----------------------------------------*/
+
+/*-----------------FOOTER-----------------------*/
 
 .footer {
   background: var(--NAVY-BLUE, #2e2f42);
