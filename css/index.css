@@ -10,14 +10,60 @@ body {
 
 a {
   text-decoration: none;
+  margin: 0;
+  color: currentColor;
 }
 
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .link {
   text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+address {
+  font-family: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 100%;
+  width: 1188px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*----------------------------------------*/
@@ -25,12 +71,8 @@ ul {
 /*-----------------HEADER-----------------------*/
 
 .header {
-  display: flex;
-  width: 1440px;
-  height: 72px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-navigation-logo {
@@ -92,17 +134,18 @@ ul {
 
 /*-----------------HERO-----------------------*/
 
-.hero {
-  background: var(--NAVY-BLUE, #2e2f42);
+.hero-container {
+  background-color: var(--NAVY-BLUE, #2e2f42);
+  padding: 188px 472px 292px 472px;
 }
+
 .hero-title {
   color: var(--WHITE, #fff);
-  text-align: center;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  width: 496px;
+  margin-bottom: 48px;
 }
 
 .hero-button-os {
@@ -124,6 +167,12 @@ ul {
 /*----------------------------------------*/
 
 /*-----------------VALUES-----------------------*/
+
+.values-list {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .values-item-title {
   color: var(--NAVY-BLUE, #2e2f42);
   font-size: 20px;
@@ -145,6 +194,8 @@ ul {
 
 .team {
   background: var(--CLOUD, #f4f4fd);
+  padding-top: 120px;
+  padding-bottom: 572px;
 }
 
 .team-title {
@@ -155,6 +206,7 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .team-list-title {
