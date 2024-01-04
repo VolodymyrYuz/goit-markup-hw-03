@@ -213,7 +213,7 @@ button {
   width: calc((100% - 24px * 3) / 4);
 }
 
-. .values-item-title {
+.values-item-title {
   color: var(--NAVY-BLUE, #2e2f42);
   font-size: 20px;
   font-weight: 500;
