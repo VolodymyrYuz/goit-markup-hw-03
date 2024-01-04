@@ -73,6 +73,17 @@ button {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  margin-left: 156px;
+  margin-right: 156px;
+}
+
+.header-container {
+  display: flex;
+  margin-left: 0 auto;
+}
+
+.header-navigation {
+  display: flex;
 }
 
 .header-navigation-logo {
@@ -83,6 +94,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .header-navigation-logo:hover,
 .header-navigation-logo:focus {
@@ -99,6 +111,12 @@ button {
   text-transform: uppercase;
 }
 
+.header-menu-list {
+  display: flex;
+  gap: 40px;
+  margin-right: 76px;
+}
+
 .header-address {
   font-style: normal;
 }
@@ -109,6 +127,12 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.header-address-list {
+  display: flex;
+  gap: 40px;
+  margin-left: 0 auto;
 }
 
 .header-menu-link:hover,
@@ -136,7 +160,6 @@ button {
 
 .hero-container {
   background-color: var(--NAVY-BLUE, #2e2f42);
-  padding: 188px 472px 292px 472px;
 }
 
 .hero-title {
