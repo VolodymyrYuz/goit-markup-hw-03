@@ -85,7 +85,6 @@ button {
 .header-navigation {
   display: flex;
   align-items: center;
-  padding: 24px 0;
 }
 
 .header-navigation-logo {
@@ -121,7 +120,6 @@ button {
 
 .header-address {
   font-style: normal;
-  padding: 24px 0;
 }
 
 .header-menu-link {
@@ -130,6 +128,7 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .header-address-list {
