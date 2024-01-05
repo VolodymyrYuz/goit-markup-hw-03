@@ -96,7 +96,6 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
-  padding: 24px 0;
 }
 
 .header-navigation-logo:hover,
@@ -117,10 +116,12 @@ button {
 .header-menu-list {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .header-address {
   font-style: normal;
+  padding: 24px 0;
 }
 
 .header-menu-link {
