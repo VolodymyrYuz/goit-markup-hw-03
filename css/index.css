@@ -75,12 +75,11 @@ button {
 .header {
   border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
   background: var(--WHITE, #fff);
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header-container {
   display: flex;
+  padding: 0 15px;
 }
 
 .header-navigation {
@@ -97,6 +96,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
+  padding: 24px 0;
 }
 
 .header-navigation-logo:hover,
@@ -160,12 +160,15 @@ button {
 
 /*-----------------HERO-----------------------*/
 
-.hero-container {
-  background-color: var(--NAVY-BLUE, #2e2f42);
+.hero {
+  padding: 188px 0px;
   width: 1440px;
   height: 600px;
   flex-shrink: 0;
-  padding: 188px 0;
+  background-color: var(--NAVY-BLUE, #2e2f42);
+}
+
+.hero-container {
 }
 
 .hero-title {
@@ -338,7 +341,6 @@ button {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 
 .portfolio-list-item-title {
@@ -348,6 +350,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   padding-left: 16px;
+  margin-bottom: 8px;
 }
 
 .portfolio-list-iten-text {
