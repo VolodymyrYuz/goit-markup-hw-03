@@ -21,6 +21,10 @@ ul {
   padding-left: 0;
 }
 
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
 }
@@ -46,9 +50,7 @@ button {
 
 .container {
   max-width: 100%;
-  width: 1188px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1158px;
   margin: 0 auto;
 }
 
@@ -83,6 +85,7 @@ button {
 
 .header-navigation {
   display: flex;
+  align-items: center;
 }
 
 .header-navigation-logo {
@@ -162,6 +165,7 @@ button {
   width: 1440px;
   height: 600px;
   flex-shrink: 0;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -170,10 +174,10 @@ button {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
   margin-bottom: 48px;
   margin-left: 472px;
   margin-right: 472px;
-  padding-top: 188px;
 }
 
 .hero-button-os {
@@ -185,12 +189,16 @@ button {
   cursor: pointer;
   background-color: #4d5ae5;
   font-family: "Roboto", sans-serif;
-  padding: 16px 32px 16px 32px;
   border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  display: inline-flex;
+  display: block;
   align-items: flex-start;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  margin-left: 635px;
+  margin-right: 635px;
 }
 
 .hero-button-os:focus,
@@ -202,9 +210,11 @@ button {
 
 /*-----------------VALUES-----------------------*/
 
+.values {
+  padding: 120px 0px;
+}
+
 .values-list {
-  padding-top: 120px;
-  padding-bottom: 120px;
   display: flex;
   gap: 24px;
 }
@@ -219,6 +229,7 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .values-list-text {
@@ -234,7 +245,7 @@ button {
 
 .team {
   background: var(--CLOUD, #f4f4fd);
-  padding-top: 120px;
+  padding: 120px 0px;
 }
 
 .team-list {
@@ -243,16 +254,17 @@ button {
 }
 
 .team-list-item {
+  width: calc((100% - 3 * 24px) / 4);
+
   border-radius: 0px 0px 4px 4px;
   background: var(--WHITE, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  margin-bottom: 120px;
 }
 
-.team-list-img {
-  margin-bottom: 32px;
+.team-personal-container {
+  padding: 32px 0px;
 }
 
 .team-title {
@@ -273,7 +285,7 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 3px;
+  margin-bottom: 8px;
 }
 .team-list-text {
   color: var(--SLATE, #434455);
@@ -281,12 +293,17 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
+
+  text-align: center;
 }
 
 /*----------------------------------------*/
 
 /*-----------------PORTFOLIO-----------------------*/
+
+.portfolio {
+  padding: 120px 0px;
+}
 
 .portfolio-title {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -296,26 +313,34 @@ button {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  margin-top: 120px;
+
   margin-bottom: 72px;
 }
 
 .portfolio-list {
   display: flex;
   gap: 48px 24px;
-  margin-bottom: 120px;
+
   flex-wrap: wrap;
 }
 
 .portfolio-list-item {
-  border: 1px solid var(--CORNFLOWER, #e7e9fc);
   background: var(--WHITE, #fff);
+  width: calc((100% - 48px) / 3);
 }
+
 .portfolio-list-img {
-  margin-bottom: 32px;
   background: url(<path-to-image>),
     lightgray -25.026px 0px / 125% 100% no-repeat;
 }
+
+.portfolio-card-description {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
+}
+
 .portfolio-list-item-title {
   color: var(--NAVY-BLUE, #2e2f42);
   font-size: 20px;
@@ -323,10 +348,9 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   padding-left: 16px;
-  margin-bottom: 8px;
 }
+
 .portfolio-list-iten-text {
-  margin-bottom: 32px;
   color: var(--SLATE, #434455);
   font-size: 16px;
   font-weight: 400;
@@ -341,8 +365,7 @@ button {
 
 .footer {
   background: var(--NAVY-BLUE, #2e2f42);
-  padding-top: 101.5px;
-  padding-bottom: 100px;
+  padding: 100px 0px;
 }
 
 .footer-logo {
@@ -353,6 +376,8 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-web {
@@ -365,11 +390,11 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .footer-text {
   color: var(--CLOUD, #f4f4fd);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 17.5px;
 }
