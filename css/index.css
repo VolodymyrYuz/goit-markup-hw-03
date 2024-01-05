@@ -85,6 +85,7 @@ button {
 .header-navigation {
   display: flex;
   align-items: center;
+  padding: 24px 0;
 }
 
 .header-navigation-logo {
@@ -116,7 +117,6 @@ button {
 .header-menu-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 
 .header-address {
@@ -163,7 +163,6 @@ button {
 
 .hero {
   padding: 188px 0px;
-  width: 1440px;
   height: 600px;
   flex-shrink: 0;
   background-color: var(--NAVY-BLUE, #2e2f42);
@@ -180,8 +179,6 @@ button {
   letter-spacing: 0.02em;
   max-width: 496px;
   margin-bottom: 48px;
-  margin-left: 472px;
-  margin-right: 472px;
 }
 
 .hero-button-os {
